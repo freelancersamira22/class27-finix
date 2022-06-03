@@ -493,7 +493,6 @@ body .btn-primary:hover{
 	line-height: 70px;
 	border-radius: 50%; */
 }
-
 .carousel-indicators [data-bs-target].active span i{
  color: #e73c3e;
  
@@ -511,11 +510,10 @@ button.active::after{
     left: 0;
     z-index: 1;
 }
- .carousel-control-next, .carousel-control-prev{
+.carousel-control-next, .carousel-control-prev{
     top: -575px;
     width: 5%;
-    opacity: 1;
-  
+    opacity: 1; 
 }
 
 i.fa-solid.fa-arrow-left-long{
@@ -552,16 +550,41 @@ i.fa-solid.fa-arrow-right-long {
 }
 .client-details h5{
     color: #e73c3e; 
-} 
-.testimonial-section .carousel-indicators [data-bs-target]{
-    height: 30px;
-    width: 30px;
-    border: 1px solid red;
-    opacity: 1;
-    background-color: #111;
 }
-.testimonial-section .carousel-indicators{
-    
+.carousell-indicatorss {
+	right: -30px;
+	position: absolute;
+	display: block;
+	bottom: 37%;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+
+}
+.carousell-indicatorss [data-bs-target] {
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	opacity: 1;
+	border: 1px solid gray;
+	border-radius: 50%;
+	align-items: center;
+	display: flex;
+	margin-bottom: 5px;
+}
+.indicator-button {
+	display: inline-block;
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	background-color: red;
+	border-radius: 50%;
+	right: 5px;
+	transform: scale(0);
+	transition: .3s ease-in-out;
+}
+.carousell-indicatorss button.active .indicator-button{
+    transform: scale(1);
 }
 /* team-section */
 .team-member{}
